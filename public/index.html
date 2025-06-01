@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usatenko.ru</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <img src="icon.png" alt="" class="icon" />
+      <h1>Вход в чат</h1>
+      <div id="login-container" class="container">
+        <div id="step1" class="step active">
+          <input type="text" id="username" placeholder="Ваш ник" />
+          <button id="login-btn">Войти</button>
+        </div>
+      </div>
+    </div>
+    <div id="chat-container" style="display: none">
+      <div id="messages"></div>
+      <div class="input-area">
+        <input type="text" id="message-input" placeholder="Ваше сообщение" />
+        <button id="emoji-btn" class="round-btn">😀</button>
+        <button id="file-btn" class="round-btn">+</button>
+        <input
+          type="file"
+          id="file-input"
+          accept="image/*,audio/*,video/*"
+          style="display: none" />
+        <button id="send-btn" class="round-btn">➤</button>
+        <div id="emoji-picker" class="emoji-picker"></div>
+      </div>
+    </div>
+
+    <script src="client.js"></script>
+  </body>
+</html>
